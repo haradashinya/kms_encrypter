@@ -13,9 +13,9 @@ Encrypt using AWS KMS
 
 Create AWS KMS Key at <a href="https://aws.amazon.com/jp/iam/" target="_blank">this</a>.
 
-Next, replace AWS_KMS_ID Value with created it at main.py.
+Next, replace AWS_KMS_ID  with created it at main.py.
 
-    AWS_KMS_ID = 'xxx'
+    AWS_KMS_ID = '<AWS_KMS_ID>'
 
 That's all. You can get encrypted text by run command and enter question.
 
@@ -30,6 +30,8 @@ That's all. You can get encrypted text by run command and enter question.
     b'xxxxxxxxxxENCRYPTED_TEXTxxxxxxxxxx'
     === DECRYPTED TEXT === 
     b'abc'
+
+
 
 
 
