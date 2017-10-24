@@ -1,8 +1,6 @@
-import json
 import boto3
 
 boto3.set_stream_logger(name='botocore')
-# secret !
 kms = boto3.client('kms')
 AWS_KMS_ID = 'TEST'
 

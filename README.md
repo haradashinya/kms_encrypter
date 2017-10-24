@@ -1,4 +1,4 @@
-#kms_encrypter
+# kms_encrypter
 
 Encrypt using AWS KMS
 
@@ -11,9 +11,9 @@ Encrypt using AWS KMS
 ## Getting Started
 
 
-Register AWS KMS Key From AWS Console refer to <a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html" target="_blank">this site</a>.
+Create AWS KMS Key at <a href="https://aws.amazon.com/jp/iam/" target="_blank">this</a>.
 
-Next, replace AWS_KMS_ID Value with created value at main.py.
+Next, replace AWS_KMS_ID Value with created it at main.py.
 
     AWS_KMS_ID = 'xxx'
 
