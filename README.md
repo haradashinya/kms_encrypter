@@ -27,9 +27,9 @@ That's all. You can get encrypted text by run command and enter question.
     > abc
     
     === ENCRYPTED TEXT ===
-    b'xxxxxxxxxxENCRYPTED_TEXTxxxxxxxxxx'
+    'ENCRYPTED_TEXT'
     === DECRYPTED TEXT === 
-    b'abc'
+    'abc'
 
 
 
