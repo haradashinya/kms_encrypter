@@ -1,0 +1,4 @@
+config.json
+venv/
+*.p6yc
+.idea/
