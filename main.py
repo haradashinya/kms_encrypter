@@ -1,5 +1,6 @@
 import json
 import boto3
+
 boto3.set_stream_logger(name='botocore')
 # secret !
 kms = boto3.client('kms')
@@ -11,6 +12,7 @@ def encrypt(text):
         KeyId=AWS_KMS_ID,
         Plaintext=text
     )['CiphertextBlob']
+
 
 def decrypt(encrypted_text):
     return kms.decrypt(
@@ -30,7 +32,6 @@ def main():
 === DECRYPTED TEXT === 
 {decrypted}
 """)
-
 
 
 if __name__ == '__main__':
