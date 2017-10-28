@@ -1,6 +1,4 @@
-from builtins import ValueError
 import boto3
-
 class KMSEncrypter(object):
     def __init__(self,aws_kms_id):
         self.aws_kms_id = aws_kms_id
@@ -12,7 +10,6 @@ class KMSEncrypter(object):
             KeyId=self.aws_kms_id,
             Plaintext=text
         )['CiphertextBlob']
-
 
     def decrypt(self,encrypted_text):
         return self.kms.decrypt(
